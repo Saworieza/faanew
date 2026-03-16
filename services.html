@@ -7,73 +7,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
     <link rel="stylesheet" href="Assets/css/main.css">
-    <style>
-        /* Specific Styles to match Equita Design Guide */
-        .page-header {
-            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('Assets/Images/hero-feature.jpg');
-            background-size: cover;
-            background-position: center;
-            padding: 100px 0;
-            color: white;
-            text-align: center;
-        }
-        .breadcrumb-item + .breadcrumb-item::before { color: white; }
-        
-        .service-vertical-card {
-            border: none;
-            border-radius: 0;
-            transition: all 0.3s ease;
-            height: 100%;
-            background: #fff;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
-            border-bottom: 3px solid transparent;
-        }
-        .service-vertical-card:hover {
-            transform: translateY(-10px);
-            border-bottom: 3px solid #e62b1e;
-        }
-        .service-icon-box {
-            width: 70px;
-            height: 70px;
-            background: #f8f9fa;
-            color: #e62b1e;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 2rem;
-            margin-bottom: 20px;
-        }
-        .approach-step {
-            position: relative;
-            padding: 30px;
-            background: #fff;
-            text-align: center;
-            border: 1px solid #eee;
-        }
-        .step-number {
-            position: absolute;
-            top: -20px;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 40px;
-            height: 40px;
-            background: #e62b1e;
-            color: white;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-weight: bold;
-        }
-        .industry-tag {
-            background: #f8f9fa;
-            padding: 10px 20px;
-            display: inline-block;
-            margin: 5px;
-            border-left: 3px solid #e62b1e;
-            font-weight: 500;
-        }
-    </style>
+    
 </head>
 <body>
     <!-- Navigation (Mirrored from index.html) -->
@@ -124,66 +58,211 @@
                     <p class="lead">We provide specialized services that help organizations design, optimize, and manage vehicle fleets in complex operational environments.</p>
                 </div>
                 <div class="col-lg-6">
-                    <p class="text-muted">Our solutions combine engineering expertise, operational experience, digital systems, and professional training to improve fleet reliability, efficiency, safety, and sustainability. We support transport, logistics, conservation, and government programs throughout Africa.</p>
+                    <p class="text-muted">Our solutions combine engineering expertise, operational experience, digital systems, and professional training to improve fleet reliability, efficiency, safety, and sustainability.</p>
+                    <p class="text-muted"> We support organizations across transport, logistics, conservation, government, development programs, and commercial fleets throughout Africa.</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Core Verticals Section (From PDF) -->
-    <section class="py-5">
+    <section class="py-2">
         <div class="container">
             <div class="text-center mb-5">
                 <span class="sub-heading">What We Do</span>
-                <h2 class="main-heading">Three Specialized Verticals</h2>
+                <h2 class="main-heading">Our Verticals</h2>
             </div>
-            
-            <div class="row g-4">
-                <!-- 1. Fleet Projects -->
-                <div class="col-lg-4">
-                    <div class="service-vertical-card p-4">
-                        <div class="service-icon-box"><i class="bi bi-truck-flatbed"></i></div>
-                        <h3>1. Fleet Projects</h3>
-                        <p class="text-muted">Implementation of Complete Fleet Systems in remote or challenging environments.</p>
-                        <ul class="list-unstyled">
-                            <li><i class="bi bi-check2 text-danger me-2"></i>Motor pool establishment</li>
-                            <li><i class="bi bi-check2 text-danger me-2"></i>Workshop setup & optimization</li>
-                            <li><i class="bi bi-check2 text-danger me-2"></i>Fleet Digitalization (Telematics/FMS)</li>
-                            <li><i class="bi bi-check2 text-danger me-2"></i>Green Fleet (EV/Hybrid) Integration</li>
-                            <li><i class="bi bi-check2 text-danger me-2"></i>Asset replacement strategies</li>
-                        </ul>
+        </div>
+    </section>
+
+    <!-- 1. Fleet Projects Section -->
+    <section class="py-2 bg-white">
+        <div class="container py-lg-5">
+            <div class="row align-items-center">
+                
+                <!-- Left Side: Image with Floating Red Stat Box -->
+                <div class="col-lg-6 position-relative mb-5 mb-lg-0 pe-lg-5">
+                    <div class="image-wrapper">
+                        <!-- Recommended image: Assets/Images/workshop.jpg -->
+                        <img src="Assets/Images/workshop.jpg" class="img-fluid main-img-projects" alt="Fleet Projects">
+                        
+                        <!-- Red Stat Overlay Box -->
+                        <div class="stat-overlay-box">
+                            <div class="stat-inner">
+                                <i class="bi bi-truck-flatbed icon-stat"></i>
+                                <div class="stat-number">100+</div>
+                                <p class="stat-label">Successfully Implemented Projects</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
-                <!-- 2. Fleet Consultancy -->
-                <div class="col-lg-4">
-                    <div class="service-vertical-card p-4">
-                        <div class="service-icon-box"><i class="bi bi-clipboard-data"></i></div>
-                        <h3>2. Fleet Consultancy</h3>
-                        <p class="text-muted">Strategic advisory to improve operational efficiency and strengthen governance.</p>
-                        <ul class="list-unstyled">
-                            <li><i class="bi bi-check2 text-danger me-2"></i>Fleet Operational Audits</li>
-                            <li><i class="bi bi-check2 text-danger me-2"></i>Total Cost of Ownership (TCO)</li>
-                            <li><i class="bi bi-check2 text-danger me-2"></i>Fuel & Tyre Management Systems</li>
-                            <li><i class="bi bi-check2 text-danger me-2"></i>Procurement Strategy & Tenders</li>
-                            <li><i class="bi bi-check2 text-danger me-2"></i>Road Safety Audits</li>
-                        </ul>
+                <!-- Right Side: Content -->
+                <div class="col-lg-6">
+                    <p class="text-danger fw-bold small text-uppercase mb-2 letter-spacing-1">
+                        Implementation of Complete Fleet Systems
+                    </p>
+                    <h2 class="display-6 fw-bold mb-4">1. Fleet Projects</h2>
+                    
+                    <p class="text-secondary mb-4">
+                        Fleet Associates provides end-to-end implementation of fleet projects, especially for organizations operating in remote or challenging environments.
+                    </p>
+
+                    <!-- Custom Square Bullet List -->
+                    <div class="feature-list mt-4">
+                        <div class="feature-item d-flex mb-4">
+                            <div class="bullet-square me-3"></div>
+                            <div>
+                                <h5 class="fw-bold h6 mb-1">Fleet System Design & Setup</h5>
+                                <p class="small text-muted mb-0">From motor pool establishment to workshop optimization and preventive maintenance programs.</p>
+                            </div>
+                        </div>
+
+                        <div class="feature-item d-flex mb-4">
+                            <div class="bullet-square me-3"></div>
+                            <div>
+                                <h5 class="fw-bold h6 mb-1">Fleet Digitalization</h5>
+                                <p class="small text-muted mb-0">Telematics integration, fuel monitoring systems, and real-time data analytics dashboards.</p>
+                            </div>
+                        </div>
+
+                        <div class="feature-item d-flex mb-4">
+                            <div class="bullet-square me-3"></div>
+                            <div>
+                                <h5 class="fw-bold h6 mb-1">Infrastructure & Green Fleet</h5>
+                                <p class="small text-muted mb-0">Workshop design, electric mobility transition, and vehicle lifecycle optimization.</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
-                <!-- 3. Training & Capacity Development -->
-                <div class="col-lg-4">
-                    <div class="service-vertical-card p-4">
-                        <div class="service-icon-box"><i class="bi bi-people"></i></div>
-                        <h3>3. Training Solutions</h3>
-                        <p class="text-muted">Professional technical training combining practical knowledge with modern technology.</p>
-                        <ul class="list-unstyled">
-                            <li><i class="bi bi-check2 text-danger me-2"></i>Fleet Management Training</li>
-                            <li><i class="bi bi-check2 text-danger me-2"></i>Automotive Diagnostics Training</li>
-                            <li><i class="bi bi-check2 text-danger me-2"></i>Defensive & Eco-Driving</li>
-                            <li><i class="bi bi-check2 text-danger me-2"></i>Electric Mobility Maintenance</li>
-                            <li><i class="bi bi-check2 text-danger me-2"></i>5S Workshop Organization</li>
-                        </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- 2. Fleet Consultancy Section (Reversed Layout) -->
+    <section class="py-2 bg-light">
+        <div class="container py-lg-5">
+            <div class="row align-items-center">
+                
+                <!-- Left Side: Content (Order 1) -->
+                <div class="col-lg-6 order-lg-1 pe-lg-5">
+                    <p class="text-danger fw-bold small text-uppercase mb-2 letter-spacing-1">
+                        Strategic Advisory and Technical Consulting
+                    </p>
+                    <h2 class="display-6 fw-bold mb-4">2. Fleet Consultancy</h2>
+                    
+                    <p class="text-secondary mb-4">
+                        We support organizations in improving operational efficiency, reducing costs, and strengthening governance in fleet operations through specialized technical audits and strategic frameworks.
+                    </p>
+
+                    <!-- Custom Square Bullet List -->
+                    <div class="feature-list mt-4">
+                        <div class="feature-item d-flex mb-4">
+                            <div class="bullet-square me-3"></div>
+                            <div>
+                                <h5 class="fw-bold h6 mb-1">Operational & Financial Audits</h5>
+                                <p class="small text-muted mb-0">Performance evaluation, cost per km analysis, utilization studies, and Total Cost of Ownership (TCO) modeling.</p>
+                            </div>
+                        </div>
+
+                        <div class="feature-item d-flex mb-4">
+                            <div class="bullet-square me-3"></div>
+                            <div>
+                                <h5 class="fw-bold h6 mb-1">Maintenance & Fuel Systems</h5>
+                                <p class="small text-muted mb-0">Workshop process optimization, fuel fraud prevention, and tyre management strategies for extended asset life.</p>
+                            </div>
+                        </div>
+
+                        <div class="feature-item d-flex mb-4">
+                            <div class="bullet-square me-3"></div>
+                            <div>
+                                <h5 class="fw-bold h6 mb-1">Procurement & Safety Governance</h5>
+                                <p class="small text-muted mb-0">Tender technical evaluations, supplier vetting, and comprehensive road safety audits with driver behavior monitoring.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Side: Image with Floating Red Stat Box (Order 2) -->
+                <div class="col-lg-6 order-lg-2 position-relative mb-5 mb-lg-0 ps-lg-5">
+                    <div class="image-wrapper">
+                        <!-- Recommended image: Assets/Images/fleet.jpg -->
+                        <img src="Assets/Images/fleet.jpg" class="img-fluid main-img-consultancy" alt="Fleet Consultancy">
+                        
+                        <!-- Red Stat Overlay Box (Positioned on the Left for reversed layout) -->
+                        <div class="stat-overlay-box-reversed">
+                            <div class="stat-inner text-center">
+                                <i class="bi bi-shield-check icon-stat"></i>
+                                <div class="stat-number">25+</div>
+                                <p class="stat-label">Years of Strategic Expertise</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. Training & Capacity Development Section -->
+    <section class="py-2 bg-white">
+        <div class="container py-lg-5">
+            <div class="row align-items-center">
+                
+                <!-- Left Side: Image with Floating Red Stat Box -->
+                <div class="col-lg-6 position-relative mb-5 mb-lg-0 pe-lg-5">
+                    <div class="image-wrapper">
+                        <!-- Recommended image: A photo of a training session or classroom -->
+                        <img src="Assets/Images/logitech.png" class="img-fluid main-img-projects" alt="Technical Training">
+                        
+                        <!-- Red Stat Overlay Box -->
+                        <div class="stat-overlay-box">
+                            <div class="stat-inner">
+                                <i class="bi bi-mortarboard icon-stat"></i>
+                                <div class="stat-number">1000+</div>
+                                <p class="stat-label">Technicians & Drivers Trained</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Side: Content -->
+                <div class="col-lg-6">
+                    <p class="text-danger fw-bold small text-uppercase mb-2 letter-spacing-1">
+                        Professional Fleet and Automotive Technical Training
+                    </p>
+                    <h2 class="display-6 fw-bold mb-4">3. Training & Capacity Development</h2>
+                    
+                    <p class="text-secondary mb-4">
+                        Our specialized programs for managers, technicians, and drivers combine deep practical knowledge with modern fleet technologies to build high-performance teams.
+                    </p>
+
+                    <!-- Custom Square Bullet List -->
+                    <div class="feature-list mt-4">
+                        <div class="feature-item d-flex mb-4">
+                            <div class="bullet-square me-3"></div>
+                            <div>
+                                <h5 class="fw-bold h6 mb-1">Fleet & Workshop Management</h5>
+                                <p class="small text-muted mb-0">Operations management, financial control, maintenance planning, workshop productivity, and 5S organization.</p>
+                            </div>
+                        </div>
+
+                        <div class="feature-item d-flex mb-4">
+                            <div class="bullet-square me-3"></div>
+                            <div>
+                                <h5 class="fw-bold h6 mb-1">Technical & Electric Mobility</h5>
+                                <p class="small text-muted mb-0">Automotive diagnostics, EV systems maintenance, battery management, and charging infrastructure specialized for the African market.</p>
+                            </div>
+                        </div>
+
+                        <div class="feature-item d-flex mb-4">
+                            <div class="bullet-square me-3"></div>
+                            <div>
+                                <h5 class="fw-bold h6 mb-1">Advanced Driver Programs</h5>
+                                <p class="small text-muted mb-0">Defensive driving, fuel-efficient (Eco) driving, and driver behavior improvement centered on fleet safety and cost reduction.</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -191,47 +270,32 @@
     </section>
 
     <!-- Our Approach (From PDF) -->
-    <section class="py-5 bg-light">
-        <div class="container">
+    <section class="py-5">
+        <div class="container py-5">
             <div class="text-center mb-5">
                 <span class="sub-heading">Workflow</span>
-                <h2 class="main-heading">Our Structured Technical Approach</h2>
+                <h2 class="main-heading">Our Approach</h2>
             </div>
-            <div class="row g-0">
-                <div class="col-md-2 col-sm-4">
-                    <div class="approach-step">
-                        <div class="step-number">1</div>
-                        <h5>Assessment</h5>
-                        <p class="small text-muted">Understanding current operations and challenges.</p>
-                    </div>
+            <div class="row g-0 shadow-sm border">
+                <div class="col-md col-6 approach-box">
+                    <i class="bi bi-search"></i>
+                    <h6>1. Assessment</h6>
                 </div>
-                <div class="col-md-2 col-sm-4">
-                    <div class="approach-step">
-                        <div class="step-number">2</div>
-                        <h5>System Design</h5>
-                        <p class="small text-muted">Developing practical and scalable solutions.</p>
-                    </div>
+                <div class="col-md col-6 approach-box">
+                    <i class="bi bi-gear-wide-connected"></i>
+                    <h6>2. System Design</h6>
                 </div>
-                <div class="col-md-3 col-sm-4">
-                    <div class="approach-step">
-                        <div class="step-number">3</div>
-                        <h5>Implementation</h5>
-                        <p class="small text-muted">Deploying systems, tools, and processes.</p>
-                    </div>
+                <div class="col-md col-6 approach-box">
+                    <i class="bi bi-tools"></i>
+                    <h6>3. Implementation</h6>
                 </div>
-                <div class="col-md-2 col-sm-6">
-                    <div class="approach-step">
-                        <div class="step-number">4</div>
-                        <h5>Training</h5>
-                        <p class="small text-muted">Building internal technical capacity.</p>
-                    </div>
+                <div class="col-md col-6 approach-box">
+                    <i class="bi bi-mortarboard"></i>
+                    <h6>4. Training</h6>
                 </div>
-                <div class="col-md-3 col-sm-6">
-                    <div class="approach-step">
-                        <div class="step-number">5</div>
-                        <h5>Monitoring</h5>
-                        <p class="small text-muted">Ensuring long-term performance improvement.</p>
-                    </div>
+                <div class="col-md col-12 approach-box border-end-0">
+                    <i class="bi bi-graph-up-arrow"></i>
+                    <h6>5. Monitoring</h6>
                 </div>
             </div>
         </div>
