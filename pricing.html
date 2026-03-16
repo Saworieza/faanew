@@ -1,197 +1,224 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pricing Models - Fleet Associates Africa Ltd</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="Assets/css/main.css">
-</head>
-<body>
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light sticky-top py-1 py-lg-0">
-        <div class="container">
-            <a class="navbar-brand" href="index.html">
-                <img src="Assets/Images/Company Logo.png" style="height: 65px;">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse pb-3 pb-lg-0" id="navbarNav">
-                <ul class="navbar-nav ms-auto align-items-center">
-                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="About.html">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
-                    <li class="nav-item"><a class="nav-link active" href="pricing.html">Pricing</a></li>
-                    <li class="nav-item"><a class="nav-link" href="partnership.html">Partnership</a></li>
-                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact us</a></li>
-                    <li class="nav-item">
-                        <button class="btn btn-consultation">Book consultation</button>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-
-    <!-- Hero Section -->
-    <section class="about-hero-section">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8">
-                    <h1>Our Pricing Models</h1>
-                    <p>We offer flexible pricing models designed to suit different business needs, allowing you to choose the option that best aligns with your goals and budget.</p>
-                    <button class="btn btn-explore">Explore Pricing Models</button>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Pricing Models -->
-    <section class="pricing-section">
-        <div class="container position-relative">
-            <div class="timeline-line d-none d-md-block"></div>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Pricing & Partnerships - Fleet Associates Africa Ltd</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+        <link rel="stylesheet" href="Assets/css/main.css">
+        <style>
+            /* Equita-Inspired Custom Styles */
+            .hero-split-section { padding: 80px 0; background: #fff; }
             
-            <!-- Subscription-Based Models -->
-            <div class="pricing-card">
-                <i class="bi bi-calendar-check pricing-icon" style="font-size: 50px; color: var(--border-color);"></i>
-                <h3>Subscription-Based Models</h3>
-                <p class="pricing-description">
-                    Clients pay a fixed monthly/annual fee for fleet or industrial services
-                </p>
-                <div class="use-cases">
-                    <strong>use cases:</strong>
-                    <span>Vehicle monitoring systems, industrial equipment servicing contracts</span>
+            .floating-box-red {
+                background: #e62b1e;
+                color: white;
+                padding: 40px;
+                position: absolute;
+                top: 80%;
+                left: 15%;
+                transform: translateY(-50%);
+                z-index: 5;
+                width: 70%;
+                box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+            }
+
+            .red-feature-bar {
+                background: #e62b1e url('https://www.transparenttextures.com/patterns/topography.png');
+                color: white;
+                padding: 100px 0;
+            }
+
+            .stat-item i { font-size: 2.5rem; display: block; margin-bottom: 15px; }
+            .stat-number { font-size: 2.5rem; font-weight: 800; line-height: 1; }
+
+            .model-card-img {
+                width: 100%;
+                height: 220px;
+                object-fit: cover;
+                margin-bottom: 25px;
+            }
+
+            .checkmark-list { list-style: none; padding: 0; }
+            .checkmark-list li { margin-bottom: 12px; display: flex; align-items: center; font-size: 0.95rem; }
+            .checkmark-list li i { color: #e62b1e; margin-right: 12px; font-weight: bold; }
+
+            .signature-img { height: 50px; opacity: 0.7; filter: grayscale(1); }
+
+            @media (max-width: 991px) {
+                .floating-box-red { position: static; width: 100%; transform: none; margin-top: 20px; }
+            }
+        </style>
+    </head>
+    <body>
+
+        <!-- Navigation (Standard Services Nav) -->
+        <nav class="navbar navbar-expand-lg navbar-light sticky-top py-1 py-lg-0">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="Assets/Images/Company Logo.png" style="height: 65px;">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse pb-3 pb-lg-0" id="navbarNav">
+                    <ul class="navbar-nav ms-auto align-items-center">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="About.html">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="pricing.html">Pricing</a></li>
+                        <li class="nav-item"><a class="nav-link" href="partnership.html">Partnership</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact us</a></li>
+                        <li class="nav-item">
+                            <button class="btn btn-consultation">Book consultation</button>
+                        </li>
+                    </ul>
                 </div>
             </div>
+        </nav>
 
-            <!-- Pay-As-You-Go -->
-            <div class="pricing-card">
-                <i class="bi bi-speedometer2 pricing-icon" style="font-size: 50px; color: var(--border-color);"></i>
-                <h3>Pay-As-You-Go (Usage-Based)</h3>
-                <p class="pricing-description">
-                    Payments tied to actual usage (per km, per hour, per machine cycle)
-                </p>
-                <div class="use-cases">
-                    <strong>use cases:</strong>
-                    <span>Telematics, tire leasing, or EV battery swapping</span>
-                </div>
-            </div>
-
-            <!-- Milestone/Project-Based -->
-            <div class="pricing-card">
-                <i class="bi bi-flag pricing-icon" style="font-size: 50px; color: var(--border-color);"></i>
-                <h3>Milestone/Project-Based Payments</h3>
-                <p class="pricing-description">
-                    Payments released at defined project stages
-                </p>
-                <div class="use-cases">
-                    <strong>use cases:</strong>
-                    <span>Industrial plant set-up, workshop construction, or fleet audits</span>
-                </div>
-            </div>
-
-            <!-- Revenue Sharing -->
-            <div class="pricing-card">
-                <i class="bi bi-diagram-3 pricing-icon" style="font-size: 50px; color: var(--border-color);"></i>
-                <h3>Revenue Sharing / Profit-Sharing</h3>
-                <p class="pricing-description">
-                    Shared revenue model with clients/partners
-                </p>
-                <div class="use-cases">
-                    <strong>use cases:</strong>
-                    <span>Joint operation of workshops, fleet depots, or industrial service centers.</span>
-                </div>
-            </div>
-
-            <!-- Service-Level Agreement -->
-            <div class="pricing-card">
-                <i class="bi bi-clipboard-check pricing-icon" style="font-size: 50px; color: var(--border-color);"></i>
-                <h3>Service-Level Agreement (SLA) Based Payments</h3>
-                <p class="pricing-description">
-                    Payments tied to performance metrics like uptime, fuel savings, or efficiency gains
-                </p>
-            </div>
-
-            <!-- Digital/Mobile Payment -->
-            <div class="pricing-card">
-                <i class="bi bi-phone pricing-icon" style="font-size: 50px; color: var(--border-color);"></i>
-                <h3>Digital/Mobile Payment Integration</h3>
-                <p class="pricing-description">
-                    M-Pesa, Airtel Money, and mobile wallets for ease of transactions across Africa
-                </p>
-                <div class="use-cases">
-                    <strong>use cases:</strong>
-                    <span>Driver payments, micro-subscriptions for SMEs</span>
-                </div>
-            </div>
-
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-4 mb-4">
-                    <div class="footer-logo">
-                        <img src="Assets\Images\Company Logo.png" class="img-fluid">
+        <!-- SECTION 1: The Split Hero (Pricing & Partnership Intro) -->
+        <section class="hero-split-section">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-5">
+                        <p class="text-danger fw-bold small text-uppercase letter-spacing-1">Providing Full Range of Sustainable Solutions</p>
+                        <h1 class="display-5 fw-bold mb-4">Flexible Pricing & Alliances That Save Your Time!</h1>
+                        <p class="text-muted mb-4">Fleet Associates Africa provides tailored pricing and collaborative partnership models designed for the unique challenges of the African logistics and industrial landscape.</p>
+                        
+                        <!-- <div class="d-flex align-items-center mt-5">
+                            <div class="me-4">
+                                <h6 class="mb-0 fw-bold">Joseph Otieno Odie</h6>
+                                <p class="small text-muted mb-0">Lead Consultant</p>
+                            </div>
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/3/3a/Jon_Kirsch_Signature.png" class="signature-img" alt="signature">
+                        </div> -->
                     </div>
-                    <p class="footer-about">
-                        Founded in 2015 by visionary engineers, Fleet Associates Africa Ltd delivers integrated solutions across transport, manufacturing, and utilities.
-                    </p>
-                </div>
-                <div class="col-lg-2 col-md-4 mb-4">
-                    <h5 class="footer-title">Solutions</h5>
-                    <ul class="footer-links">
-                        <li><a href="#">Smart Fleet Management</a></li>
-                        <li><a href="#">Engineering & Industrial Support</a></li>
-                        <li><a href="#">Maintenance Projects</a></li>
-                        <li><a href="#">Technical Support</a></li>
-                    </ul>
-                </div>
-                <div class="col-lg-2 col-md-4 mb-4">
-                    <h5 class="footer-title">Reach Us</h5>
-                    <ul class="footer-links">
-                        <li><a href="#"> 
-                            <i class="bi bi-telephone-fill" style="color: #111111; text-decoration: none;"></i> 
-                            <b> +254728764014 </b> / <b> 0714606541 </b>
-                        </a></li>
-                        <li><a href="#">
-                            <i class="bi bi-envelope-fill" style="color: #111111; text-decoration: none;"></i> <a href="mailto:info@faaafrica.com">info@faaafrica.com
-                        </a></li>
-                        <li><a href="mailto:info@faaafrica.com">
-                            <i class="bi bi-geo-alt-fill" style="color: #111111; text-decoration: none;"></i> 
-                            New Hurlingum Estate, Off Kangundo Road, Florida Court  Nairobi
-                        </a></li>
-                    </ul>
-                </div>
-                <div class="col-lg-4 col-md-4 mb-4">
-                    <h5 class="footer-title">Follow Us</h5>
-                    <div class="social-links my-3">
-                        <a href="#"><i class="bi bi-facebook"></i></a>
-                        <a href="#"><i class="bi bi-twitter"></i></a>
-                        <a href="#"><i class="bi bi-linkedin"></i></a>
-                        <a href="#"><i class="bi bi-instagram"></i></a>
+                    <div class="col-lg-7 position-relative mt-5 mt-lg-0">
+                        <div class="floating-box-red d-none d-lg-block">
+                            <h4 class="fw-bold">Flexible, Improved & Accelerated Solutions!</h4>
+                            <p class="small mb-3 opacity-75">Providing full range of service in the sphere of fleet management and industrial systems worldwide.</p>
+                            <a href="contact.html" class="text-white fw-bold text-decoration-none small"><i class="bi bi-file-earmark-pdf me-2"></i> Download Models Brochure</a>
+                        </div>
+                        <img src="Assets/Images/fleet.jpg" class="img-fluid rounded shadow-lg" alt="Industrial Logistics">
                     </div>
-                    <ul class="footer-links">
-                        <li><a href="mailto:info@faaafrica.com">
-                            <i class="bi bi-mailbox2" style="color: #111111; text-decoration: none;"></i> 
-                            P.O Box 772 00521 Embakasi, Nairobi Kenya
-                        </a></li>
-                    </ul>
                 </div>
             </div>
-            <div class="footer-bottom d-flex justify-content-between text-center">
-                <p class="mb-0">© 2025 All rights reserved</p>
-                <div class="d-flex justify-content-center gap-4 mb-2">
-                    <a href="terms-and-conditions.html" style="color: #373636; text-decoration: none;">Terms & Conditions</a>
-                    <a href="privacy-policy.html" style="color: #373636; text-decoration: none;">Privacy Policy</a>
-                </div>
-            </div>
-        </div>
-    </footer>
+        </section>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-</body>
+        <!-- SECTION 2: Red Feature Bar (Metrics & Core Pillars) -->
+        <section class="red-feature-bar">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-5 mb-5 mb-lg-0">
+                        <h2 class="display-6 fw-bold">Individually Assess Each Plan And Offer Optimal Solutions!</h2>
+                        <p class="mt-4 opacity-75">We leverage technical expertise and smart telematics to deliver integrated fleet and industrial solutions through strategic partnerships.</p>
+                        <a href="contact.html" class="btn btn-outline-light rounded-0 px-4 py-2 mt-3">Our Services</a>
+                    </div>
+                    <div class="col-lg-7">
+                        <div class="row g-4 text-center">
+                            <div class="col-md-4 stat-item">
+                                <i class="bi bi-briefcase"></i>
+                                <div class="stat-number">25+</div>
+                                <p class="small text-uppercase mt-2">Strategic Alliances</p>
+                            </div>
+                            <div class="col-md-4 stat-item">
+                                <i class="bi bi-shield-check"></i>
+                                <div class="stat-number">100%</div>
+                                <p class="small text-uppercase mt-2">Compliance Rate</p>
+                            </div>
+                            <div class="col-md-4 stat-item">
+                                <i class="bi bi-geo-alt"></i>
+                                <div class="stat-number">10+</div>
+                                <p class="small text-uppercase mt-2">Regional Hubs</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 3: Detailed Grid (Pricing & Partnership Categories) -->
+        <section class="py-5 bg-white mt-5">
+            <div class="container py-lg-5">
+                <div class="text-center mb-5">
+                    <p class="text-danger fw-bold small text-uppercase">Financial & Strategic Models</p>
+                    <h2 class="display-6 fw-bold">Governing Logistics for World’s <br>Multinational Companies.</h2>
+                </div>
+                
+                <div class="row g-4 mt-4">
+                    <!-- Column 1: Pricing -->
+                    <div class="col-lg-4">
+                        <div class="px-3">
+                            <img src="Assets/Images/hero-feature.jpg" class="model-card-img rounded" alt="Subscription">
+                            <h4 class="fw-bold mb-3">Subscription Models</h4>
+                            <p class="text-muted small mb-4">Flexible monthly or annual frameworks designed for consistent fleet monitoring and equipment servicing.</p>
+                            <ul class="checkmark-list">
+                                <li><i class="bi bi-check-circle-fill"></i> Fixed Service Contracts</li>
+                                <li><i class="bi bi-check-circle-fill"></i> Pay-As-You-Go Options</li>
+                                <li><i class="bi bi-check-circle-fill"></i> Digital Payment Integration</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Column 2: Partnerships -->
+                    <div class="col-lg-4">
+                        <div class="px-3">
+                            <img src="Assets/Images/fleet.png" class="model-card-img rounded" alt="Alliances">
+                            <h4 class="fw-bold mb-3">Strategic Alliances</h4>
+                            <p class="text-muted small mb-4">Pooling resources with global OEMs and technology providers to bid for large-scale regional projects.</p>
+                            <ul class="checkmark-list">
+                                <li><i class="bi bi-check-circle-fill"></i> Public-Private (PPP)</li>
+                                <li><i class="bi bi-check-circle-fill"></i> Joint Venture Operations</li>
+                                <li><i class="bi bi-check-circle-fill"></i> OEM Assembly Centers</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Column 3: Performance -->
+                    <div class="col-lg-4">
+                        <div class="px-3">
+                            <img src="Assets/Images/project_mgt.jpg" class="model-card-img rounded" alt="Revenue">
+                            <h4 class="fw-bold mb-3">Revenue Sharing</h4>
+                            <p class="text-muted small mb-4">Shared income models based on actual utilization and efficiency gains in workshops or shared facilities.</p>
+                            <ul class="checkmark-list">
+                                <li><i class="bi bi-check-circle-fill"></i> Performance SLA Based</li>
+                                <li><i class="bi bi-check-circle-fill"></i> Vendor-Managed Services</li>
+                                <li><i class="bi bi-check-circle-fill"></i> Milestone Project Billing</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer (Standard) -->
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 mb-4">
+                        <img src="Assets/Images/Company Logo.png" alt="Logo" style="height: 50px;" class="mb-3">
+                        <p class="footer-about">Fleet Associates Africa Ltd delivers integrated solutions across transport, manufacturing, and utilities.</p>
+                    </div>
+                    <div class="col-lg-4 mb-4">
+                        <h5 class="footer-title">Contact Us</h5>
+                        <p class="small text-muted mb-1"><i class="bi bi-geo-alt-fill me-2"></i> Florida Court, Kangundo Road, Nairobi</p>
+                        <p class="small text-muted"><i class="bi bi-envelope-fill me-2"></i> info@faaafrica.com</p>
+                    </div>
+                    <div class="col-lg-4 mb-4 text-lg-end">
+                        <div class="social-links">
+                            <a href="#"><i class="bi bi-facebook"></i></a>
+                            <a href="#"><i class="bi bi-linkedin"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-bottom border-top pt-3 text-center">
+                    <p class="small text-muted">© 2025 Fleet Associates Africa Ltd. All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
 </html>
