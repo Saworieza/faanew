@@ -91,7 +91,7 @@
         }
 
         .about-section img{
-            border-radius: 5px;
+            /*border-radius: 5px;*/
         }
 
         .about-section img:first-of-type{
@@ -100,7 +100,7 @@
         }
 
         .about-section img:last-of-type{
-            max-width: 35%;
+            max-width: 45%;
             aspect-ratio: 1/1;
         }
 
