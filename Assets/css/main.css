@@ -184,8 +184,11 @@
         }
 
         .nav-link.active{
-            color:#fff !important;
-            background: #629193 !important;
+            color: #e62b1e !important;
+            border-bottom: thin solid #629193 !important;
+        }
+        .nav-link:hover{
+            color: #e62b1e;
         }
 
         .services-section .icon-div{
