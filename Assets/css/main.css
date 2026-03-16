@@ -1523,6 +1523,6 @@
     padding: 10px 20px;
     display: inline-block;
     margin: 5px;
-    border-left: 3px solid #e62b1e;
+    border-bottom: 1px solid #e62b1e;
     font-weight: 500;
 }
