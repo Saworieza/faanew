@@ -1527,3 +1527,28 @@
     border-bottom: 1px solid #e62b1e;
     font-weight: 500;
 }
+
+/* Custom Dropdown Styling */
+.navbar .dropdown-menu {
+    border-top: 3px solid #e62b1e !important; /* Standout red top border */
+    border-radius: 0;
+}
+
+.dropdown-item:hover {
+    background-color: #f8f9fa;
+    color: #e62b1e;
+}
+
+/* Enable Hover for Desktop */
+@media (min-width: 992px) {
+    .nav-item.dropdown:hover .dropdown-menu {
+        display: block;
+        margin-top: 0;
+        animation: fadeIn 0.3s;
+    }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
