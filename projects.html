@@ -3,12 +3,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Selected Projects - Fleet Associates Africa</title>
+    <title>Selected Projects - Fleet Associates Africa Ltd</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
     <link rel="stylesheet" href="Assets/css/main.css">
+    <style>
+        /* Specific Styles for Equita Project Cards */
+        .project-title-area {
+            text-align: center;
+            padding: 20px 0 50px;
+        }
+        .project-card {
+            margin-bottom: 50px;
+        }
+        .project-card img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            margin-bottom: 25px;
+        }
+        .project-card h4 {
+            font-weight: 700;
+            color: #1a1a1a;
+            margin-bottom: 15px;
+            font-size: 1.25rem;
+        }
+        .project-card p {
+            font-size: 0.95rem;
+            color: #666;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+        .project-checklist {
+            list-style: none;
+            padding: 0;
+            margin-bottom: 25px;
+        }
+        .project-checklist li {
+            font-size: 0.9rem;
+            font-weight: 600;
+            color: #1a1a1a;
+            margin-bottom: 8px;
+            display: flex;
+            align-items: center;
+        }
+        .project-checklist li i {
+            color: #e62b1e; /* Theme Red */
+            margin-right: 10px;
+            font-size: 1rem;
+        }
+        .btn-read-more {
+            background-color: #1a1a1a;
+            color: white;
+            border-radius: 0;
+            padding: 10px 25px;
+            font-size: 0.85rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            display: inline-flex;
+            align-items: center;
+            transition: 0.3s;
+        }
+        .btn-read-more i {
+            margin-right: 10px;
+            font-size: 0.7rem;
+        }
+        .btn-read-more:hover {
+            background-color: #e62b1e;
+            color: white;
+        }
+    </style>
 </head>
 <body>
+    <!-- Standard Navigation (Same as services.html) -->
     <nav class="navbar navbar-expand-lg navbar-light sticky-top py-1 py-lg-0">
         <div class="container">
             <a class="navbar-brand" href="index.html">
@@ -45,70 +112,54 @@
         </div>
     </nav>
 
-    <section class="page-header" style="background: linear-gradient(rgba(18, 24, 32, 0.8), rgba(18, 24, 32, 0.8)), url('Assets/Images/hero-feature.jpg'); padding: 100px 0; color: white; text-align: center;">
-        <div class="container">
-            <h1 class="display-4 fw-bold">Selected Projects</h1>
-            <p class="lead">Delivering high-impact projects across Africa for governments, NGOs, and the private sector.</p>
+    <section class="container py-5">
+        <!-- Section Header -->
+        <div class="project-title-area">
+            <p class="text-danger fw-bold small text-uppercase mb-2">High-Impact Industrial Excellence</p>
+            <h2 class="display-6 fw-bold mb-4" style="color: #0B5053;">Managing Projects For Africa’s <br>Leading Organizations.</h2>
+            <p>We deliver high-impact projects across Africa, supporting governments, NGOs, and private sector organizations</p>
         </div>
-    </section>
 
-    <section class="py-5">
-        <div class="container py-lg-5">
-            <div class="row g-4">
-                <!-- Project 1 -->
-                <div class="col-md-6 col-lg-4">
-                    <div class="card h-100 border-0 shadow-sm overflow-hidden">
-                        <img src="Assets/Images/fleet.jpg" class="card-img-top" alt="Modernization">
-                        <div class="card-body p-4">
-                            <h5 class="fw-bold">Fleet System Modernization</h5>
-                            <p class="small text-muted">Upgrading fleet management systems with advanced technology for improved tracking and operational control.</p>
-                        </div>
-                    </div>
-                </div>
-                <!-- Project 2 -->
-                <div class="col-md-6 col-lg-4">
-                    <div class="card h-100 border-0 shadow-sm overflow-hidden">
-                        <img src="Assets/Images/workshop.jpg" class="card-img-top" alt="Rehabilitation">
-                        <div class="card-body p-4">
-                            <h5 class="fw-bold">Workshop Rehabilitation</h5>
-                            <p class="small text-muted">Designing and renovating workshops to enhance functionality, workflow, and safety standards.</p>
-                        </div>
-                    </div>
-                </div>
-                <!-- Project 3 -->
-                <div class="col-md-6 col-lg-4">
-                    <div class="card h-100 border-0 shadow-sm overflow-hidden">
-                        <img src="Assets/Images/logitech.png" class="card-img-top" alt="CMMS">
-                        <div class="card-body p-4">
-                            <h5 class="fw-bold">CMMS Implementation</h5>
-                            <p class="small text-muted">Deploying Computerized Maintenance Management Systems to streamline planning and boost reliability.</p>
-                        </div>
-                    </div>
-                </div>
-                <!-- Project 4 -->
-                <div class="col-md-6 col-lg-4">
-                    <div class="card h-100 border-0 shadow-sm overflow-hidden">
-                        <img src="Assets/Images/training.png" class="card-img-top" alt="Safety">
-                        <div class="card-body p-4">
-                            <h5 class="fw-bold">Transport Safety Programs</h5>
-                            <p class="small text-muted">Promoting safe driving practices and risk reduction initiatives across transport operations.</p>
-                        </div>
-                    </div>
-                </div>
-                <!-- Project 5 -->
-                <div class="col-md-6 col-lg-4">
-                    <div class="card h-100 border-0 shadow-sm overflow-hidden">
-                        <img src="Assets/Images/fleet.png" class="card-img-top" alt="Electric">
-                        <div class="card-body p-4">
-                            <h5 class="fw-bold">Electric Mobility Training</h5>
-                            <p class="small text-muted">Preparing teams to operate and maintain sustainable transport solutions and EV infrastructure.</p>
-                        </div>
-                    </div>
-                </div>
+        <div class="row">
+            <!-- Project 1: Fleet System Modernization -->
+            <div class="col-lg-4 col-md-6 project-card">
+                <img src="Assets/Images/fleet.jpg" alt="Fleet Modernization">
+                <h4>Fleet System Modernization</h4>
+                <p>We help organizations upgrade legacy fleet management systems with advanced technology to improve tracking, efficiency, and operational control.</p>
             </div>
+
+            <!-- Project 2: Workshop Rehabilitation -->
+            <div class="col-lg-4 col-md-6 project-card">
+                <img src="Assets/Images/factory.png" alt="Workshop Rehabilitation">
+                <h4>Workshop Rehabilitation</h4>
+                <p>Our team designs and renovates maintenance workshops, enhancing functionality, workflow, and safety standards for optimal performance.</p>
+            </div>
+
+            <!-- Project 3: CMMS Implementation -->
+            <div class="col-lg-4 col-md-6 project-card">
+                <img src="Assets/Images/logitech.png" alt="CMMS Implementation">
+                <h4>CMMS Implementation</h4>
+                <p>We implement Computerized Maintenance Management Systems to streamline maintenance planning, reduce downtime, and boost asset reliability.</p>
+            </div>
+
+            <!-- Project 4: Transport Safety Programs -->
+            <div class="col-lg-4 col-md-6 project-card">
+                <img src="Assets/Images/training.png" alt="Safety Programs">
+                <h4>Transport Safety Programs</h4>
+                <p>We deliver initiatives that promote safe driving practices, compliance, and risk reduction across regional transport operations.</p>
+            </div>
+
+            <!-- Project 5: Electric Mobility Training -->
+            <div class="col-lg-4 col-md-6 project-card">
+                <img src="Assets/Images/fleet.png" alt="Electric Mobility">
+                <h4>Electric Mobility Training</h4>
+                <p>Preparing teams to operate and maintain sustainable transport solutions including specialized training on electric vehicles and infrastructure.</p>
+            </div>
+
         </div>
     </section>
 
+    <!-- Standard Footer (Same as index.html) -->
     <footer>
         <div class="container">
             <div class="row">
